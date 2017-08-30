@@ -1,0 +1,28 @@
+<html>
+<head>
+<script type="text/JavaScript">
+function cal()
+{
+ var x=document.f.t.value;
+ var i,m;
+ document.write("<table border=' 5'>")
+ for(i=1;i<=10;i++)
+ {
+  m=i*x; 
+  document.write("<tr><td>"+x+"x"+i+"</td><td>=</td><td>"+m+"</td></tr>")
+ }
+document.write("</table>")
+}
+
+</script>
+</head>
+<body bgColor=00f0f0>
+<font color="blue" size="4">
+<form name="f">
+Enter a Number
+<input type="text" name="t"><br>
+<input type="button" value="calculate" onclick="cal()">
+</form>
+</font>
+</body>
+</html>
